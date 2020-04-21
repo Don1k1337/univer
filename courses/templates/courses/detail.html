@@ -1,0 +1,27 @@
+{% extends "courses/__base.html" %}
+{% block container %}
+
+<div class="card">
+    <div class="card-header">
+        <h5 class="card-title">Course Details #{{courses.id}}</h5>
+    </div>
+    <div class="card-body">
+    <dl class="row">
+      <dt class="col-sm-3">Title</dt>
+      <dd class="col-sm-9">{{ course.title }}</dd>
+      <dt class="col-sm-3">Description</dt>
+      <dd class="col-sm-9">{{ course.description }}</dd>
+      <dt class="col-sm-3">Language</dt>
+      <dd class="col-sm-9">{{ course.language }}</dd>
+      <dt class="col-sm-3">Abbr</dt>
+      <dd class="col-sm-9">{{ course.abbreviation }}</dd>
+      <dt class="col-sm-3">Ccode</dt>
+      <dd class="col-sm-9">{{ course.ccode }}</dd>
+      <dt class="col-sm-3">Major</dt>
+      <dd class="col-sm-9">{{ course.major }}</dd>
+    </dl>
+
+    </div>
+</div>
+
+{% endblock %}
